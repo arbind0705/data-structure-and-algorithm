@@ -1,0 +1,53 @@
+#include<bits/stdc++.h>
+using namespace std;
+
+int main(){
+    int n = 6;
+    int i,j;
+    
+    cout<<"\n 1st pattern : \n";
+    for(i = 1;i<=n;i++){
+        for(j = 1;j<=n;j++){
+            cout<<"*";
+        }
+        cout<<endl;
+    }
+    
+    cout << "\n 2nd pattern : \n";
+    
+    for(i = 1;i<=n;i++){
+        for(j = 1;j<=i;j++){
+            cout<<"*";
+        }
+        cout<<endl;
+    }
+    
+    cout << "\n 3rd pattern : \n";
+    
+    for(i = 1;i<=n;i++){
+        for(j = 1;j<i;j++){
+            cout<<j;
+        }
+        cout<<endl;
+    }
+    cout << "\n 4th pattern : \n";
+    
+    for(i = 1;i<=n;i++){
+        for(j = 1;j<=i;j++){
+            cout<<i;
+        }
+        cout<<endl;
+    }
+    
+    cout << "\n 5th pattern : \n";
+    
+    for(i = n;i >= 1;i--){
+        for(j = 1;j<=i;j++){
+            cout<<"*";
+        }
+        cout<<endl;
+    }
+    
+    
+    return 0;
+}
